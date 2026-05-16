@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BrandBroz Media — Digital Promotions & Media Support Agency</title>
+<meta name="description" content="BrandBroz Media is a digital marketing & event management agency in Madurai. 7.3M+ views, 944K+ engagements, 25+ promotions delivered." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-warm: #f8fafc;
+    --surface: #ffffff;
+    --surface-2: #f1f5f9;
+    --line: #e2e8f0;
+    --ink: #0f172a;
+    --ink-muted: #475569;
+    --ink-dim: #94a3b8;
+    --accent: #0ea5e9;
+    --accent-soft: rgba(14, 165, 233, 0.1);
+    --cream: #f8fafc;
+    --display: "Outfit", system-ui, sans-serif;
+    --sans: "Inter", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.03) 0px, transparent 50%);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: var(--accent); color: #000; }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ============ NAV ============ */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid var(--line);
+    transition: all 0.3s ease;
+  }
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    position: relative;
+  }
+  @media (min-width: 901px) {
+    .nav-center-wrapper {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+  }
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+  .brand-name {
+    font-family: var(--display);
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  .brand-tag {
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: var(--ink-dim);
+    margin-top: 2px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 8px 0;
+  }
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-links a:hover::after { width: 100%; }
+
+  .nav-cta {
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+    box-shadow: 0 4px 12px var(--accent-soft);
+  }
+  .nav-cta:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 24px var(--accent-soft);
+    background: #0369a1;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .logo img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+  }
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+  .brand-name {
+    font-family: var(--display);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  .brand-tag {
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: var(--ink-dim);
+    margin-top: 2px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 8px 0;
+  }
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-links a:hover::after { width: 100%; }
+
+  .nav-cta {
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+    box-shadow: 0 4px 12px var(--accent-soft);
+  }
+  .nav-cta:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 24px var(--accent-soft);
+    background: #0369a1;
+  }
+  
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+  }
+  .menu-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--ink);
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 900px) {
+    .menu-toggle { display: flex; }
+    .nav-links {
+      position: fixed;
+      top: 0; right: -100%;
+      height: 100vh;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      z-index: 1000;
+      gap: 32px;
+    }
+    .nav-links.active { 
+      right: 0; 
+      display: flex !important; 
+    }
+    .nav-links a {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--ink);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+    }
+    .nav-links.active a {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .nav-links.active a:nth-child(1) { transition-delay: 0.1s; }
+    .nav-links.active a:nth-child(2) { transition-delay: 0.2s; }
+    .nav-links.active a:nth-child(3) { transition-delay: 0.3s; }
+    .nav-links.active a:nth-child(4) { transition-delay: 0.4s; }
+    .nav-cta { display: none; }
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    padding: 140px 0 60px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    background: linear-gradient(-45deg, #fff, var(--bg-warm), #fff, #f0f9ff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+    text-align: left;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-visual {
+    position: relative;
+    animation: floating 6s ease-in-out infinite;
+  }
+  @keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  .hero-visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0 30px 60px rgba(0, 163, 255, 0.15);
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    margin-bottom: 24px;
+    background: #fff;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  .hero h1 {
+    font-family: var(--display);
+    font-size: clamp(48px, 9vw, 96px);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+    max-width: 900px;
+  }
+  .hero h1 .accent-text {
+    color: var(--accent);
+    display: block;
+  }
+  .hero p.lead {
+    font-size: clamp(16px, 1.8vw, 20px);
+    color: var(--ink-muted);
+    max-width: 600px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  .hero-cta-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+  }
+  .btn-primary, .btn-secondary {
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 8px 20px var(--accent-soft);
+  }
+  .btn-primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 30px var(--accent-soft);
+    background: #0369a1;
+  }
+  .btn-secondary {
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  .btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  /* Stats strip */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    padding: 32px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .stat {
+    padding: 0 16px;
+    border-right: 1px solid var(--line);
+  }
+  .stat:last-child { border-right: none; }
+  .stat .num {
+    font-family: var(--sans);
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat .num .accent { color: var(--accent); }
+  .stat .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink-muted);
+  }
+
+  /* ============ SECTION BASE ============ */
+  section { padding: 60px 0; position: relative; }
+
+  .section-head {
+    text-align: center;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: var(--display);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1.2px;
+    max-width: 800px;
+    margin-bottom: 16px;
+  }
+  .section-title span {
+    color: var(--accent);
+  }
+  .section-sub {
+    font-size: 16px;
+    color: var(--ink-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* ============ TEAM ============ */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .team-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+  .team-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  }
+  .avatar {
+    width: 90px;
+    height: 90px;
+    background: var(--bg-warm);
+    border-radius: 50%;
+    margin: 0 auto 24px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .team-card h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    letter-spacing: -1px;
+  }
+  .team-card .role {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  .team-card p {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.7;
+  }
+
+  /* ============ SERVICES ============ */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  .service {
+    background: var(--bg);
+    padding: 48px 40px;
+    transition: background 0.3s;
+    position: relative;
+  }
+  .service:hover { background: var(--surface); }
+  .service-num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+    margin-bottom: 24px;
+  }
+  .service h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+  }
+  .accent-text {
+    color: var(--accent);
+    font-family: var(--display);
+    font-style: normal;
+  }
+  .service p {
+    color: var(--ink-muted);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ============ WORK / VIDEOS ============ */
+  .work-section {
+    background: var(--bg-warm);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .video-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    aspect-ratio: 9 / 16;
+    max-height: 720px;
+    margin: 0 auto;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .video-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+  .video-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .video-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    pointer-events: none;
+  }
+  .video-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: #000;
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .video-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.3px;
+  }
+  .mute-btn {
+    position: absolute;
+    top: 16px; right: 16px;
+    width: 40px; height: 40px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 5;
+    transition: background 0.2s;
+  }
+  .mute-btn:hover { background: var(--accent); color: #000; }
+  .mute-btn svg { width: 18px; height: 18px; }
+
+  /* ============ CLIENTS ============ */
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .client {
+    padding: 32px 24px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s;
+    background: var(--surface);
+  }
+  .client:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .client-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+  }
+  .client-cat {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-muted);
+    margin-bottom: 16px;
+  }
+  .client-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .stars { color: var(--accent); letter-spacing: 1px; }
+
+  /* ============ PERFORMANCE ============ */
+  .perf-section { background: var(--bg-warm); }
+  .perf-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .perf-bars { display: flex; flex-direction: column; gap: 24px; }
+  .bar-row { }
+  .bar-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  .bar-name {
+    font-family: var(--mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink);
+  }
+  .bar-value {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 28px;
+    color: var(--accent);
+  }
+  .bar-track {
+    height: 6px;
+    background: var(--surface-2);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 100px;
+    transition: width 1.5s ease;
+  }
+  .perf-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .perf-stat {
+    background: var(--bg);
+    padding: 32px 24px;
+  }
+  .perf-stat .big {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .perf-stat .big .accent { color: var(--accent); }
+  .perf-stat .small {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-muted);
+  }
+
+  /* ============ EVENTS ============ */
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .service {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 32px;
+    padding: 64px 48px;
+    transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+  .service:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.06);
+  }
+  .event-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 36px 28px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  .event-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+  }
+  .event-num {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 36px;
+    color: var(--accent);
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+  .event-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+  }
+  .event-card p {
+    font-size: 13px;
+    color: var(--ink-muted);
+    line-height: 1.7;
+  }
+
+  /* ============ CONTACT ============ */
+  .contact-section {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+  }
+  .contact-section::before {
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px; height: 1000px;
+    background: radial-gradient(circle, var(--accent-soft) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  .contact-inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .contact-big {
+    font-size: clamp(40px, 8vw, 100px);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 24px;
+  }
+  .contact-sub {
+    font-size: 18px;
+    color: var(--ink-muted);
+    max-width: 500px;
+    margin: 0 auto 60px;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .contact-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: 40px 24px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--ink);
+    transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(0, 163, 255, 0.1);
+  }
+  .contact-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.3s;
+  }
+  .contact-card:hover .contact-icon {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.1) rotate(5deg);
+  }
+  .contact-card .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--ink-dim);
+    margin-bottom: 12px;
+  }
+  .contact-card .value {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 40px 0;
+    text-align: center;
+  }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  footer p {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+    letter-spacing: 0.5px;
+  }
+  footer .tagline { color: var(--ink-muted); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 900px) {
+    .container { padding: 0 20px; }
+    nav .container { padding: 14px 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 120px 0 60px; }
+    section { padding: 80px 0; }
+    .stats { grid-template-columns: repeat(2, 1fr); gap: 24px; padding: 24px 0; }
+    .stat { border-right: none; padding: 0; }
+    .team-grid,
+    .services-grid,
+    .video-grid,
+    .events-grid { grid-template-columns: 1fr; }
+    .clients-grid { grid-template-columns: repeat(2, 1fr); }
+    .perf-grid { grid-template-columns: 1fr; gap: 40px; }
+    .contact-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero { padding: 100px 0 40px; }
+    .hero h1 { font-size: clamp(40px, 12vw, 64px); letter-spacing: -1px; }
+    .hero-cta-row { flex-direction: column; width: 100%; }
+    .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+    .section-title { font-size: clamp(32px, 10vw, 48px); }
+  }
+
+  @media (max-width: 500px) {
+    .clients-grid,
+    .contact-grid,
+    .perf-stats { grid-template-columns: 1fr; }
+  }
+
+  /* Animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hero-content > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.4s; }
+  .hero-content .hero-cta-row { animation-delay: 0.6s; }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .video-card:hover video {
+    transform: scale(1.05);
+  }
+  .video-card video {
+    transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="BrandBroz Logo">
+      <div class="logo-text">
+        <div class="brand-name">BRAND BROZ</div>
+        <div class="brand-tag">DIGITAL MARKETING</div>
+      </div>
+    </a>
+    <div class="nav-center-wrapper">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#work">Campaigns</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#performance">Insights</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Work With Us →</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <span class="eyebrow">Digital Promotions · Media Support · Event Mgmt.</span>
+      <h1>
+        We make brands <br/>
+        <span class="accent-text">go viral.</span>
+      </h1>
+      <p class="lead">
+        BrandBroz Media is a digital marketing &amp; event management agency based in Madurai —
+        empowering schools, colleges &amp; businesses with strategic social media campaigns,
+        influencer-led promotions, and end-to-end event execution.
+      </p>
+      <div class="hero-cta-row">
+        <a href="#work" class="btn-primary">See our work →</a>
+        <a href="#contact" class="btn-secondary">Start a project</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <img src="images/hero-visual.png" alt="Viral Growth Visual">
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="num">7.3M<span class="accent">+</span></div>
+        <div class="label">Total Views</div>
+      </div>
+      <div class="stat">
+        <div class="num">944K<span class="accent">+</span></div>
+        <div class="label">Engagements</div>
+      </div>
+      <div class="stat">
+        <div class="num">25<span class="accent">+</span></div>
+        <div class="label">Promotions</div>
+      </div>
+      <div class="stat">
+        <div class="num">10<span class="accent">+</span></div>
+        <div class="label">Events Managed</div>
+      </div>
+      <div class="stat">
+        <div class="num">3.8<span class="accent">%</span></div>
+        <div class="label">Sales Conversion</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== WORK / VIDEOS ===== -->
+<section class="work-section" id="work">
+  <div class="reveal">
+    <div class="section-head">
+      <div class="section-tag">→ Featured Work</div>
+      <h2 class="section-title">Campaigns that <span class="accent-text">moved</span> the needle.</h2>
+      <p class="section-sub">
+        From a single reel to a complete brand campaign — here's a snapshot of the work that earned us 4.97M views on a single post.
+      </p>
+    </div>
+
+    <div class="video-grid" style="max-width: 1100px; margin: 0 auto;">
+      <!-- Video 1: College -->
+      <div class="video-card">
+        <button class="mute-btn" aria-label="Toggle mute" onclick="toggleMute(this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        </button>
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="videos/alumni-college.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+          <span class="video-tag">Education · Alumni Story</span>
+          <div class="video-title">College Foundation Story</div>
+        </div>
+      </div>
+
+      <!-- Video 2: Career -->
+      <div class="video-card">
+        <button class="mute-btn" aria-label="Toggle mute" onclick="toggleMute(this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        </button>
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="videos/aviation-career.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+          <span class="video-tag">Education · Admissions</span>
+          <div class="video-title">Aviation Career Campaign</div>
+        </div>
+      </div>
+
+      <!-- Video 3: Restaurant -->
+      <div class="video-card">
+        <button class="mute-btn" aria-label="Toggle mute" onclick="toggleMute(this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        </button>
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="videos/highkey-resto.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+          <span class="video-tag">High Key Resto · Hospitality</span>
+          <div class="video-title">Perur Restaurant Promo</div>
+        </div>
+      </div>
+
+      <!-- Video 4: Foods -->
+      <div class="video-card">
+        <button class="mute-btn" aria-label="Toggle mute" onclick="toggleMute(this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        </button>
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="videos/svs-foods.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+          <span class="video-tag">SVS Foods · F&amp;B</span>
+          <div class="video-title">Bajji Maavu Campaign</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="reveal">
+    <div class="section-head">
+      <div class="section-tag">→ What We Do</div>
+      <h2 class="section-title">Idea &amp; <span class="accent-text">implementation.</span></h2>
+      <p class="section-sub">
+        Strategic digital solutions for educational institutions, retail brands, and businesses ready to scale.
+      </p>
+    </div>
+
+    <div class="service-grid">
+      <div class="service">
+        <div class="service-num">/ 01</div>
+        <h3>Admissions <span class="accent-text">Promotion</span></h3>
+        <p>Targeted social media campaigns for schools &amp; colleges to boost enrollment through reels, stories, and paid ads — campus walkthroughs, alumni features, course highlights.</p>
+      </div>
+      <div class="service">
+        <div class="service-num">/ 02</div>
+        <h3>Event <span class="accent-text">Management</span></h3>
+        <p>End-to-end event planning — from college fests to brand activations — with full media coverage, live streaming, drone shots, and post-event content packages.</p>
+      </div>
+      <div class="service">
+        <div class="service-num">/ 03</div>
+        <h3>Brand <span class="accent-text">Promotions</span></h3>
+        <p>Influencer-led brand campaigns with authentic content that reaches millions of organic viewers. Built around storytelling, not sales pitches.</p>
+      </div>
+      <div class="service">
+        <div class="service-num">/ 04</div>
+        <h3>Social Media <span class="accent-text">Growth</span></h3>
+        <p>Profile optimization, content strategy, and analytics-driven growth plans for institutions &amp; businesses. Followers are a vanity metric — we track conversions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLIENTS ===== -->
+<section id="clients" style="padding-top: 0;">
+  <div class="reveal">
+    <div class="section-head">
+      <div class="section-tag">→ Trusted By</div>
+      <h2 class="section-title">Top-rated <span class="accent-text">collaborations.</span></h2>
+      <p class="section-sub">
+        25+ promotions delivered across automotive, retail, jewellery, food, and entertainment.
+      </p>
+    </div>
+
+    <div class="clients-grid" style="max-width: 1100px; margin: 0 auto;">
+      <div class="client">
+        <div class="client-name">Suzuki</div>
+        <div class="client-cat">Automotive</div>
+        <div class="client-rating"><span class="stars">★★★★★</span> 4.8</div>
+      </div>
+      <div class="client">
+        <div class="client-name">Hero</div>
+        <div class="client-cat">Automotive</div>
+        <div class="client-rating"><span class="stars">★★★★★</span> 4.7</div>
+      </div>
+      <div class="client">
+        <div class="client-name">James &amp; Co</div>
+        <div class="client-cat">Retail</div>
+        <div class="client-rating"><span class="stars">★★★★★</span> 4.9</div>
+      </div>
+      <div class="client">
+        <div class="client-name">Thangamayil</div>
+        <div class="client-cat">Jewellery</div>
+        <div class="client-rating"><span class="stars">★★★★★</span> 4.8</div>
+      </div>
+      <div class="client">
+        <div class="client-name">Poorvika</div>
+        <div class="client-cat">Electronics</div>
+        <div class="client-rating"><span class="stars">★★★★★</span> 4.7</div>
+      </div>
+      <div class="client">
+        <div class="client-name">Shri Sakthi Cinemas</div>
+        <div class="client-cat">Entertainment</div>
+        <div class="client-rating"><span class="stars">★★★★★</span> 4.9</div>
+      </div>
+      <div class="client">
+        <div class="client-name">SVS Foods</div>
+        <div class="client-cat">Food &amp; Beverage</div>
+        <div class="client-rating"><span class="stars">★★★★★</span> 4.8</div>
+      </div>
+      <div class="client" style="background: var(--accent); border-color: var(--accent);">
+        <div class="client-name" style="color: #000;">Your Brand</div>
+        <div class="client-cat" style="color: #000;">Next Up</div>
+        <div class="client-rating" style="color: #000;">Get in touch →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PERFORMANCE ===== -->
+<section class="perf-section" id="performance">
+  <div class="reveal">
+    <div class="section-head">
+      <div class="section-tag">→ The Numbers</div>
+      <h2 class="section-title">Data-backed <span class="accent-text">impact.</span></h2>
+      <p class="section-sub">
+        Metrics from our top-performing campaigns — proof that engagement converts when the story is right.
+      </p>
+    </div>
+
+    <div class="perf-grid" style="max-width: 1100px; margin: 0 auto;">
+      <div class="perf-bars">
+        <div class="bar-row">
+          <div class="bar-label"><span class="bar-name">Views</span><span class="bar-value">100%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="bar-name">Engagement Rate</span><span class="bar-value">12.9%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 65%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="bar-name">Sales Conversion</span><span class="bar-value">3.8%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 38%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="bar-name">Share Rate</span><span class="bar-value">2.5%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 25%"></div></div>
+        </div>
+      </div>
+
+      <div class="perf-stats">
+        <div class="perf-stat">
+          <div class="big">4.97<span class="accent">M</span></div>
+          <div class="small">Top Reel Views</div>
+        </div>
+        <div class="perf-stat">
+          <div class="big">436<span class="accent">K</span></div>
+          <div class="small">Top Reel Likes</div>
+        </div>
+        <div class="perf-stat">
+          <div class="big">102<span class="accent">K</span></div>
+          <div class="small">Top Shares</div>
+        </div>
+        <div class="perf-stat">
+          <div class="big">12.9<span class="accent">%</span></div>
+          <div class="small">Engagement Rate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENTS ===== -->
+<section style="padding: 120px 0;">
+  <div class="reveal">
+    <div class="section-head" style="text-align: center; margin-bottom: 60px;">
+      <div class="section-tag">→ Event Management</div>
+      <h2 class="section-title">10+ events. <span class="accent-text">Zero compromises.</span></h2>
+      <p class="section-sub" style="max-width: 600px; margin: 16px auto 0;">
+        Full-service planning &amp; execution — from college fests to brand launches.
+      </p>
+    </div>
+
+    <div class="events-grid">
+      <div class="event-card">
+        <div class="event-num">01</div>
+        <h4>College Fests &amp; Cultural Events</h4>
+        <p>Stage design, artist coordination, sound &amp; lighting, social promo, live coverage.</p>
+      </div>
+      <div class="event-card">
+        <div class="event-num">02</div>
+        <h4>Brand Launch Events</h4>
+        <p>Product launches, showroom openings, promotional pop-ups with influencer-driven media support.</p>
+      </div>
+      <div class="event-card">
+        <div class="event-num">03</div>
+        <h4>Admission Drives</h4>
+        <p>Campus tours, open day management, digital registration, on-ground promotional campaigns.</p>
+      </div>
+      <div class="event-card">
+        <div class="event-num">04</div>
+        <h4>Corporate Events</h4>
+        <p>Conferences, seminars, annual days, award ceremonies with professional AV management.</p>
+      </div>
+      <div class="event-card">
+        <div class="event-num">05</div>
+        <h4>Sports &amp; Community</h4>
+        <p>Tournament management, community meetups, awareness campaigns with drone coverage.</p>
+      </div>
+      <div class="event-card">
+        <div class="event-num">06</div>
+        <h4>Digital Campaigns</h4>
+        <p>Online events, webinars, live sessions, hybrid events with real-time social engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team" style="padding-top: 0;">
+  <div class="reveal">
+    <div class="section-head">
+      <div class="section-tag">→ The Team</div>
+      <h2 class="section-title">Creative minds <span class="accent-text">behind it all.</span></h2>
+      <p class="section-sub">
+        A small team that punches above its weight — three roles, one mission.
+      </p>
+    </div>
+
+    <div class="team-grid" style="max-width: 1100px; margin: 0 auto;">
+      <div class="team-card">
+        <div class="avatar"><img src="images/Essac.png" alt="Essac"></div>
+        <h3>Essac</h3>
+        <div class="role">Influencer &amp; Content Creator</div>
+        <p>Social media powerhouse with 7M+ reel views and a growing community. Expert in viral content, audience engagement, and brand storytelling that drives real results.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar"><img src="images/Bharathi.png" alt="Bharathi"></div>
+        <h3>Bharathi</h3>
+        <div class="role">Business Development</div>
+        <p>Strategic thinker driving client acquisition and partnership growth. Builds long-term relationships with educational institutions and corporate brands.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar"><img src="images/hari.png" alt="Hariharan"></div>
+        <h3>Hariharan</h3>
+        <div class="role">Social Media Analyst</div>
+        <p>Data-driven analyst tracking performance metrics, audience insights, and campaign ROI. Turns analytics into actionable growth strategies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="reveal">
+    <div class="contact-inner">
+      <h2 class="contact-big">
+        Ready to <span class="accent-text">grow?</span>
+      </h2>
+      <p class="contact-sub">
+        Let's build something that gets watched, shared, and remembered.
+      </p>
+
+      <div class="contact-grid">
+        <a href="tel:+916380235575" class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="label">Call Us</div>
+          <div class="value">+91 63802 35575</div>
+        </a>
+        <a href="mailto:brandbroz.media26@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div class="label">Email Us</div>
+          <div class="value">brandbroz.media26@gmail.com</div>
+        </a>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div class="label">Visit Us</div>
+          <div class="value">Madurai, Tamil Nadu, India</div>
+        </div>
+        <a href="https://instagram.com/brandbroz.media" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+          <div class="label">Instagram</div>
+          <div class="value">@brandbroz.media</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="reveal">
+    <p>© 2026 BrandBroz Media · Made in Madurai</p>
+    <p class="tagline">Digital Promotions · Media Support · Event Management</p>
+  </div>
+</footer>
+
+<script>
+  // Mute toggle per video
+  function toggleMute(btn) {
+    const card = btn.closest('.video-card');
+    const video = card.querySelector('video');
+    video.muted = !video.muted;
+    btn.innerHTML = video.muted
+      ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>'
+      : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>';
+  }
+
+  // Mobile Menu Toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    const spans = menuToggle.querySelectorAll('span');
+    spans[0].style.transform = navLinks.classList.contains('active') ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+    spans[1].style.opacity = navLinks.classList.contains('active') ? '0' : '1';
+    spans[2].style.transform = navLinks.classList.contains('active') ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
+  });
+
+  // Close menu on link click
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
+
+  // Ensure videos play
+  function initVideos() {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(v => {
+      v.muted = true;
+      v.play().catch(error => {
+        console.log("Autoplay blocked, waiting for interaction", error);
+      });
+    });
+  }
+
+  // Handle play on first interaction if blocked
+  window.addEventListener('click', () => {
+    document.querySelectorAll('video').forEach(v => {
+      if (v.paused) v.play().catch(() => {});
+    });
+  }, { once: true });
+
+  initVideos();
+
+  // Scroll Reveal Animation
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // Animate bars on scroll
+  const bars = document.querySelectorAll('.bar-fill');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const w = e.target.style.width;
+        e.target.style.width = '0%';
+        setTimeout(() => e.target.style.width = w, 100);
+      }
+    });
+  }, { threshold: 0.3 });
+  bars.forEach(b => observer.observe(b));
+</script>
+</body>
+</html>
